@@ -1,0 +1,157 @@
+<ion-header>
+    <ion-toolbar dir="rtl" color="one">
+
+        <ion-title text-center>SadadPay</ion-title>
+
+        <!--<s left>-->
+        <!--<ion-button  menuToggle>-->
+        <!--<ion-icon style="font-size: 2.2em;" color="#ffff" name="menu"></ion-icon>-->
+        <!--</ion-button>-->
+        <!--</s>-->
+    </ion-toolbar>
+    <!--<ion-title text-center>{{AccountNumber}}</ion-title>-->
+</ion-header>
+
+<ion-content no-bounce padding class="home">
+    <ion-card>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only (click)="E15Payment()">
+                            <ion-icon color="danger" name="business"></ion-icon>
+                        </ion-button>
+                        <p>دفع E15</p>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only (click)="E15query()">
+                            <ion-icon color="secondary" name="ios-business"></ion-icon>
+                        </ion-button>
+                        <p>تحقق من E15</p>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only (click)="MobilBiil()">
+                            <ion-icon color="primary" name="phone-portrait"></ion-icon>
+                        </ion-button>
+                        <p>شحن الهاتف</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <!-- <ion-card> -->
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only (click)="cardTrans()">
+                            <ion-icon color="dark" name="ios-card"></ion-icon>
+                        </ion-button>
+                        <p>تحويل من بطاقة</p>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only (click)="ElectPay()">
+                            <ion-icon color="one" name="ios-flash"></ion-icon>
+                        </ion-button>
+                        <p>شحن الكهرباء</p>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <!--<ion-button icon-only (click)="BalanceInquiry()">-->
+                        <ion-button icon-only href="balance-inquiry">
+                            <ion-icon color="two" name="ios-home"></ion-icon>
+                        </ion-button>
+                        <p>معرفة الرصيد</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <!--//New-->
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only (click)="Purchase()">
+                            <ion-icon color="danger" name="basket"></ion-icon>
+                        </ion-button>
+                        <p>شراء</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <!--endNew-->
+            <!-- </ion-card> -->
+        </ion-grid>
+    </ion-card>
+
+
+    <ion-card>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only large (click)="openPayQr()">
+                            <ion-icon color="two" style="font-size: 2em" name="qr-scanner"></ion-icon>
+                        </ion-button>
+                        <p>دفع سريع </p>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <ion-button icon-only large (click)="openMyQr()">
+                            <ion-icon color="five" style="font-size: 2em" name="barcode"></ion-icon>
+                        </ion-button>
+                        <p>استلام سريع </p>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
+
+
+    <!--<ion-slides dir="rtl" pager autoplay="2000">-->
+    <!--<ion-slide>-->
+    <!--<img src="../../assets/imgs/pay.jpg" alt="" srcset="" width=100% height="90">-->
+    <!--</ion-slide>-->
+    <!--<ion-slide>-->
+    <!--<img src="../../assets/imgs/pay.jpg" alt="" srcset="" width=100% height="90">-->
+    <!--</ion-slide>-->
+    <!--</ion-slides>-->
+
+    <!--<ion-footer>-->
+    <!--<app-tabs></app-tabs>-->
+    <!--</ion-footer>-->
+</ion-content>
+
+
+<!--<ion-header>-->
+<!--<ion-toolbar color="primary">-->
+<!--<ion-title>-->
+<!--Tab One-->
+<!--</ion-title>-->
+<!--</ion-toolbar>-->
+<!--</ion-header>-->
+
+<!--<ion-content>-->
+<!--<ion-item>-->
+<!--<ion-select [(ngModel)]="lang" (ionChange)="switchLanguage()">-->
+<!--<ion-select-option value="en" selected="true">English</ion-select-option>-->
+<!--<ion-select-option value="ar">German</ion-select-option>-->
+<!--</ion-select>-->
+<!--</ion-item>-->
+
+<!--<ion-list>-->
+<!--<ion-item>-->
+<!--<h2>{{ 'APPLE' | translate }}</h2>-->
+<!--</ion-item>-->
+<!--<ion-item>-->
+<!--<h2>{{ 'BALL' | translate }}</h2>-->
+<!--</ion-item>-->
+<!--<ion-item>-->
+<!--<h2>{{ 'CAT' | translate }}</h2>-->
+<!--</ion-item>-->
+<!--</ion-list>-->
+<!--</ion-content>-->
